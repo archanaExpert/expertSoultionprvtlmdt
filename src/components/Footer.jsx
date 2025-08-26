@@ -19,7 +19,12 @@ const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
+ const handleScrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
     <section className="text-center bg-amber-500 py-20 px-4">
@@ -36,14 +41,9 @@ const Footer = () => {
     Let’s discuss how our technology solutions can fuel your success.
   </p>
 
-  <div className="flex justify-center mt-8">
-    <Link
-      to="contact"
-      smooth={true}
-      duration={800}
-      offset={-50} 
-    >
-      <motion.button
+ <div className="flex justify-center mt-8">
+     <Link to="/contact"> <motion.button
+        onClick={handleScrollUp}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         className="bg-blue-900 px-8 py-3 rounded-full text-white font-semibold text-lg shadow-lg 
@@ -51,8 +51,8 @@ const Footer = () => {
       >
         Get Started →
       </motion.button>
-    </Link>
-  </div>
+      </Link>
+    </div>
 </section>
     <footer className="bg-white text-gray-300 py-10 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6">

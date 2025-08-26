@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <section className="w-full min-h-screen bg-gray-100 flex items-center justify-center px-6 md:px-12 py-16">
       <div className="max-w-7xl w-full flex flex-col items-center">
-        {/* Heading */}
+   
         <motion.h2
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,9 +27,9 @@ const AboutUs = () => {
           experiences.
         </motion.p>
 
-        {/* Content Grid */}
+      
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          {/* Left Content */}
+      
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}

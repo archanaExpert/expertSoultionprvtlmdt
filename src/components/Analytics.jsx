@@ -11,7 +11,7 @@ import {
   FaRupeeSign
 } from "react-icons/fa";
 import { MdTrendingUp } from "react-icons/md";
-
+import { Link } from "react-router-dom";
 export default function Analytics() {
   const [openFAQ, setOpenFAQ] = useState(null);
 

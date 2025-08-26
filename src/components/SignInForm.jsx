@@ -84,8 +84,9 @@ const SignInForm = () => {
   };
 
   return (
+    <> <div className="">
     <motion.div
-      className="max-w-lg mx-auto p-8 rounded-3xl bg-gradient-to-r from-black to-blue-500 text-white shadow-xl"
+      className="max-w-lg mx-auto m-4 p-8 rounded-3xl bg-gradient-to-r from-black to-blue-500 text-white shadow-xl"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -240,6 +241,8 @@ const SignInForm = () => {
         </div>
       </form>
     </motion.div>
+    </div>
+    </>
   );
 };
 
