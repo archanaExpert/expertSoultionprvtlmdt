@@ -24,7 +24,7 @@ export default function SolutionsPage() {
   }, []);
 
   return (
-    <div className="bg-blue-100 min-h-screen">
+    <div className="bg-blue-100 min-h-screen p-5">
      
       {/* <nav className="fixed w-full bg-gray-800 p-4 shadow-lg z-50">
         <ul className="flex justify-center gap-6">
@@ -40,7 +40,7 @@ export default function SolutionsPage() {
 
      <div className="pt-20 px-6 md:px-16 lg:px-28 space-y-16 bg-blue-100 min-h-screen">
       <h1 className="text-4xl md:text-5xl font-extrabold text-center text-blue-950">
-        Empower Your <span className="text-blue-500">Business</span>
+        Empower Your <span className="text-orange-400">Business</span>
       </h1>
       <p className="text-gray-800 text-center max-w-2xl mx-auto text-lg">
         We provide cutting-edge solutions that transform your business,
@@ -59,7 +59,7 @@ export default function SolutionsPage() {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-4">
-              <span className="text-blue-500 text-5xl">{sec.icon}</span>
+              <span className="text-blue-100 text-5xl">{sec.icon}</span>
               <h2 className="text-2xl font-bold text-white">{sec.title}</h2>
             </div>
             <p className="mt-4 text-gray-400 leading-relaxed">
@@ -68,7 +68,7 @@ export default function SolutionsPage() {
             </p>
             <a
               href={`/${sec.id}`}
-              className="mt-6 inline-block bg-blue-600 px-6 py-3 rounded-lg text-white font-medium shadow-md hover:bg-blue-700 hover:shadow-lg transition duration-300"
+              className="mt-6 inline-block bg-blue-900 px-6 py-3 rounded-lg text-white font-medium shadow-md hover:bg-blue-700 hover:shadow-lg transition duration-300"
             >
               Learn More →
             </a>
@@ -78,14 +78,6 @@ export default function SolutionsPage() {
     </div>
 
     
-      {showScroll && (
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className=" bg-blue-500 p-3 rounded-full text-white shadow-lg hover:bg-blue-600 transition duration-300 flex items-center justify-center animate-bounce  "
-        >
-          <FaArrowUp size={24} />
-        </button>
-      )}
     </div>
   );
 }
